@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+
+	<!--Tab to edit-->
+</head>
+<body>
+
+<header>
+<nav>
+  <div>wew.my</div>
+
+  <div class="nav-links">
+    <div>pricing</div>
+    <div>documentation</div>
+    <div>signin</div>
+    <div>sign up</div>
+  </div>
+<div class="group"><div class="theme-toggle">
+  <span class="sun">☀️</span>
+  <span class="moon">🌙</span>
+</div>
+
+<!-- HAMBURGER MENU -->
+<div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+  
+</nav>
+
+<div class="hero">
+  <div class="deploy">Deploy your next Server in a Few click</div>
+  <div>We take all the difficult work out of your hands...</div>
+  <div class="cta">
+    <span class="btn">Get started</span>
+    <span>Deploy your app now</span>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="cta-image"></div>
+</div>
+</header>
+
+<main>
+  <!--Tab to edit-->
+  
+  <section class="features">
+  <div class="section-header">
+    <h2>Powerful Features</h2>
+    <p>Everything you need to deploy and scale with ease.</p>
+  </div>
+  <div class="feature-cards">
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>Fast Deployment</h3>
+      <p>Deploy servers in seconds, not hours.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h3>Secure</h3>
+      <p>Industry-standard security to protect your data.</p>
+    </div>
+    <div class="card">
+      <div class="icon">☁️</div>
+      <h3>Scalable</h3>
+      <p>Scale your applications effortlessly.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🤖</div>
+      <h3>Automation</h3>
+      <p>Automate repetitive tasks and monitoring.</p>
+    </div>
+  </div>
+</section>
+<!-- ---------------- CONTACT US SECTION ---------------- -->
+<section class="contact-us">
+  <div class="section-header">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to work with us? Send us a message!</p>
+  </div>
+
+  <form class="contact-form">
+    <div class="form-group">
+      <input type="text" placeholder="Your Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<!-- ---------------- TESTIMONIALS SECTION ---------------- -->
+<section class="testimonials">
+  <div class="section-header">
+    <h2>What Our Customers Say</h2>
+  </div>
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+      <p>"Wew.my saved us hours of work every week!"</p>
+      <span>- Alex P.</span>
+    </div>
+    <div class="testimonial-card">
+      <p>"The best deployment platform I’ve ever used."</p>
+      <span>- Maria S.</span>
+    </div>
+    <div class="testimonial-card">
+      <p>"Easy, fast, and secure. Highly recommend."</p>
+      <span>- John D.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------- PRICING SECTION ---------------- -->
+<section class="pricing">
+  <div class="section-header">
+    <h2>Pricing Plans</h2>
+    <p>Simple pricing for teams of all sizes.</p>
+  </div>
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>Starter</h3>
+      <p class="price">$9/mo</p>
+      <ul>
+        <li>1 Server</li>
+        <li>Basic Support</li>
+        <li>5GB Storage</li>
+      </ul>
+      <span class="btn">Choose Plan</span>
+    </div>
+    <div class="pricing-card popular">
+      <h3>Pro</h3>
+      <p class="price">$29/mo</p>
+      <ul>
+        <li>5 Servers</li>
+        <li>Priority Support</li>
+        <li>50GB Storage</li>
+      </ul>
+      <span class="btn">Choose Plan</span>
+    </div>
+    <div class="pricing-card">
+      <h3>Enterprise</h3>
+      <p class="price">Custom</p>
+      <ul>
+        <li>Unlimited Servers</li>
+        <li>Dedicated Support</li>
+        <li>Unlimited Storage</li>
+      </ul>
+      <span class="btn">Contact Us</span>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------- FINAL CTA SECTION ---------------- -->
+<section class="final-cta">
+  <div class="final-cta-content">
+    <h2>Ready to get started?</h2>
+    <p>Deploy your app in minutes and focus on what matters.</p>
+    <span class="btn">Get Started Now</span>
+  </div>
+</section>
+
+<!-- ---------------- FOOTER ---------------- -->
+<footer>
+  <div class="footer-content">
+    <div>© 2025 wew.my</div>
+    <div class="footer-links">
+      <span>Privacy</span>
+      <span>Terms</span>
+      <span>Contact</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+
+<script type="text/javascript" charset="utf-8">
+	
+</script>
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  const themeToggle = document.querySelector(".theme-toggle");
+
+  // Apply saved theme or system preference
+  function applyTheme() {
+    const saved = localStorage.getItem("theme");
+
+    if (saved) {
+      document.body.classList.toggle("dark", saved === "dark");
+    } else {
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.body.classList.toggle("dark", systemDark);
+    }
+  }
+
+  applyTheme();
+
+  // Toggle theme when clicked
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const isDark = document.body.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+</script>
+
+
+</body>
+</html>	
+		
