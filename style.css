@@ -166,7 +166,9 @@ z-index: 10;
   align-items: center;
   gap: 25px;
 }
-
+.final-cta-content p {
+    margin:20px;
+}
 .btn {
   padding: 13px 30px;
   background: #111;
@@ -490,7 +492,12 @@ gap: 10px;
   justify-content: center;
   gap: 25px;
 }
-
+.testimonial-card .dark{
+    color:white;
+}
+.button span {
+    color:white;
+}
 .testimonial-card {
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(10px);
