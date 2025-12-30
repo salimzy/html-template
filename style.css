@@ -40,8 +40,15 @@ padding:6px;
 background:white;
 height:400px;
 width:80%;
-
+overflow: hidden;
 }
+.cta-image img{
+   width:100%;
+
+object-fit: cover; 
+height: auto;
+
+ }
 .btn{
 background:blue;
 

@@ -34,3 +34,4 @@
     contactForm.reset();
   });
 
+console.log(Math.floor(4.9))
